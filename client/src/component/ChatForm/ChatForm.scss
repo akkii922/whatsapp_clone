@@ -1,0 +1,51 @@
+.chat-form{
+    background: #ededed;
+    min-height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .action-btn{
+        display: flex;
+    }
+    .icon-block{
+        padding: 0 15px;
+        font-size: 25px;
+        color: #9d9d9d;
+        opacity: 0.6;
+        &.active{
+            color: #46c756;
+        }
+        &:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    }
+    .chat-input{
+        flex: 1;
+        height: 40px;
+        border: none;
+        border-radius: 20px;
+        padding: 0 20px;
+        outline: none;
+        font-size: 16px;
+        color: #555;
+    }
+    .sound-wave{
+        position: absolute;
+        width: 50px;
+        height: 20px;
+        right: 60px;
+    }
+    .file-share{
+        position: relative;
+        input{
+            width: 25px;
+            height: 30px;
+            opacity: 0;
+            position: absolute;
+            left: 15px;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+}

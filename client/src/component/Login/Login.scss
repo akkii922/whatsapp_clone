@@ -1,0 +1,91 @@
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #eee;
+    .logo{
+        width: 120px;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        img{
+            width: 100%;
+        }
+    }
+    .login-form{
+        width: 400px;
+        height: 400px;
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        position: relative;
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
+            width: 100%;
+            .profile-img{
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background: #ddd;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 0 10px 0 #ddd;
+                .file-upload{
+                    position: absolute;
+                    height: 150px;
+                    width: 150px;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                .icon-block{
+                    font-size: 50px;
+                    color: #fff
+                }
+            }
+            .profile-name{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                color: #999;
+                .icon-block{
+                    position: absolute;
+                    left: 28px;
+                }
+                input{
+                    font-size: 20px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    outline: none;
+                    border: 1px solid #ccc;
+                    width: calc(100% - 40px);
+                    height: 40px;
+                    text-align: center;
+                }
+            }
+            .profile-submit-btn{
+                width: 200px;
+                height: 50px;
+                font-size: 18px;
+                border: none;
+                background: #46c756;
+                columns: #fff;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
