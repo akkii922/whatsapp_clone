@@ -1,6 +1,8 @@
 # SETUP
 Start redis server "redis-server"
 
+node version - v12.18.0
+
 ## Backend
 npm i
 
